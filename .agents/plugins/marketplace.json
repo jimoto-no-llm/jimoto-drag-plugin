@@ -1,0 +1,20 @@
+{
+  "name": "jimoto_drag",
+  "interface": {
+    "displayName": "Jimoto Drag"
+  },
+  "plugins": [
+    {
+      "name": "jimoto-drag-shared",
+      "source": {
+        "source": "local",
+        "path": "./plugins/jimoto-drag-shared"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

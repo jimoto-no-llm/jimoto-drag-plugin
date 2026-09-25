@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "jimoto-drag-shared": {
+      "type": "http",
+      "url": "https://jimoto-drag-shared.eightman124.workers.dev/mcp"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "jimoto-drag-shared",
+  "version": "0.2.0",
+  "description": "地元のllm Discordサーバーの発言を本人の閲覧権限で検索する共有プラグイン",
+  "author": { "name": "eightman" },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "地元のllm DRAG",
+    "shortDescription": "Discordでログインし、閲覧可能な発言を元リンク付きで検索",
+    "longDescription": "地元のllmサーバーのうち、Discordでログインした本人に閲覧権限がある発言だけを検索し、原文リンクと前後文脈を取得します。関係者チャンネルは常に除外します。",
+    "developerName": "eightman",
+    "category": "Productivity",
+    "capabilities": ["Read"],
+    "defaultPrompt": ["地元のllmでP100の使い道についての相談を探して"]
+  },
+  "mcpServers": "./.mcp.json"
+}

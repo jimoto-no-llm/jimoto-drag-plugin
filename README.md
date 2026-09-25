@@ -31,6 +31,17 @@ claude plugin install jimoto-drag-shared@jimoto_drag
 
 Claude Codeを再起動し、`/mcp` から `jimoto-drag-shared` を選んでDiscordログインを完了してください。
 
+#### うまくいかないとき
+
+- 2行をまとめて貼り付けると、2行目が1行目の引数として扱われて失敗します。1行ずつ実行してください。
+- `SSH host key is not in your known_hosts file` や `Host key verification failed` で止まる場合は、HTTPSのURLで追加してください。
+
+  ```
+  /plugin marketplace add https://github.com/jimoto-no-llm/jimoto-drag-plugin.git
+  ```
+
+- ログインを済ませても、ログイン前から開いていたセッションでは未認証のままになります。Claude Codeを開き直してください。接続状態は `claude mcp list` で確認でき、`jimoto-drag-shared` が `✓ Connected` になっていれば使えます。
+
 ## 利用範囲
 
 - `search_discord`: 閲覧可能な発言を検索

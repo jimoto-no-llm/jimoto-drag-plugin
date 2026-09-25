@@ -1,0 +1,7 @@
+{
+  "name": "jimoto-drag-shared",
+  "description": "地元のllm Discordサーバーの発言を本人の閲覧権限で検索する共有プラグイン",
+  "author": { "name": "eightman" },
+  "repository": "https://github.com/jimoto-no-llm/jimoto-drag-plugin",
+  "keywords": ["discord", "search", "mcp"]
+}

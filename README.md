@@ -1,8 +1,10 @@
-# 地元のllm DRAG for Codex
+# 地元のllm DRAG for Codex / Claude Code
 
-地元のllm Discordサーバーのメンバーが、各自のCodexから過去の発言を検索するためのプラグインです。Discordログイン後、本人が現在閲覧できる発言だけを元メッセージへのリンク付きで返します。関係者チャンネルとその配下は常に除外します。
+地元のllm Discordサーバーのメンバーが、各自のCodexまたはClaude Codeから過去の発言を検索するためのプラグインです。Discordログイン後、本人が現在閲覧できる発言だけを元メッセージへのリンク付きで返します。関係者チャンネルとその配下は常に除外します。
 
 ## インストール
+
+### Codex
 
 ```sh
 codex plugin marketplace add jimoto-no-llm/jimoto-drag-plugin
@@ -10,6 +12,24 @@ codex plugin add jimoto-drag-shared@jimoto_drag
 ```
 
 Codexを開き直し、`地元のllm DRAG` を選んでDiscordログインを完了してください。メンバー本人のDiscordアカウントが必要です。Botトークンやローカル環境ファイルは配布しません。
+
+### Claude Code
+
+Claude Code内で実行します。
+
+```
+/plugin marketplace add jimoto-no-llm/jimoto-drag-plugin
+/plugin install jimoto-drag-shared@jimoto_drag
+```
+
+シェルから入れる場合:
+
+```sh
+claude plugin marketplace add jimoto-no-llm/jimoto-drag-plugin
+claude plugin install jimoto-drag-shared@jimoto_drag
+```
+
+Claude Codeを再起動し、`/mcp` から `jimoto-drag-shared` を選んでDiscordログインを完了してください。
 
 ## 利用範囲
 
@@ -21,4 +41,4 @@ Codexを開き直し、`地元のllm DRAG` を選んでDiscordログインを完
 
 接続先: `https://jimoto-drag-shared.eightman124.workers.dev/mcp`
 
-このリポジトリにはCodexプラグインの配布ファイルのみを置いています。MCPサーバーの認証情報は含めていません。
+このリポジトリにはCodex / Claude Codeプラグインの配布ファイルのみを置いています。MCPサーバーの認証情報は含めていません。

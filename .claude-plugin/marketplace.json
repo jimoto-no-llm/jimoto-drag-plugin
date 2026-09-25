@@ -1,0 +1,15 @@
+{
+  "name": "jimoto_drag",
+  "owner": { "name": "eightman" },
+  "metadata": {
+    "description": "地元のllm DRAG plugin marketplace"
+  },
+  "plugins": [
+    {
+      "name": "jimoto-drag-shared",
+      "source": "./plugins/jimoto-drag-shared",
+      "description": "地元のllm Discordサーバーの発言を本人の閲覧権限で検索する共有プラグイン",
+      "category": "productivity"
+    }
+  ]
+}
